@@ -19,11 +19,11 @@ const App = () => {
 
   return (
     <>
-        <Routes>
-          <Route path="/" element={<BotPage />}/>
-          <Route path="/robots/:id" element={<BotSpecsPage />}/>
-          <Route path="*" element={<NotFoundPage />}/>
-        </Routes>
+      <Routes>
+        <Route path="/" element={<BotPage />}/>
+        <Route path="/robots/:id" element={<BotSpecsPage />}/>
+        <Route path="*" element={<NotFoundPage />}/>
+      </Routes>
     </>
   );
 }
