@@ -4,13 +4,18 @@
 
 import NotFoundPage from '../pages/NotFoundPage';
 import { useParams } from 'react-router-dom';
+import { useContext } from 'react'
+import RobotContext from '../context/RobotContext'
 
 const BotSpecs = () => {
   // TIP: remember that the `id` from the URL is a string
   // here we are hard-coding the id. How can you get it from the URL?
 
-  const bot = useParams();
+  const { id } = useParams();
+  const { robots } = useContext(RobotContext)
+  const bot = robots.find(robot => robot.id === Number(id))
   if (!bot) return <NotFoundPage />
+  // console.log(robots.id)
 
   const botClassIcon = (bot_class) => {
     switch (bot_class) {

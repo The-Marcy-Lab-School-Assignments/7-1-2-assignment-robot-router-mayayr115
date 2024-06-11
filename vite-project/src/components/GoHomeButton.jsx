@@ -2,18 +2,16 @@
 // - Make the button navigate the user back to the home page
 
 import { useNavigate } from "react-router-dom";
-
-const handleClick = () => {
-  const navigate = useNavigate();
-  navigate(`/`);
-  console.log(`take me to home`);
-};
+import { Link } from "react-router-dom";
+import BotPage from '../pages/BotsPage'
 
 const GoHomeButton = () => {
   return (
-    <button className="ui button fluid" onClick={handleClick}>
-      Go Home
-    </button>
+    <Link to='/'>
+      <button className="ui button fluid">
+          Go Home
+      </button>
+    </Link>
   )
 }
 

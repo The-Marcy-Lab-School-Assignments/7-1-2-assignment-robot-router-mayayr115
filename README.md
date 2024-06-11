@@ -26,20 +26,20 @@ There are 14 tasks to complete and 1 bonus.
 Your goal is to meet at least 75% of these requirements to complete the assignment. But don't stop there! Shoot for 100%!
 
 **Functionality**
-- [ ] Navigating to `/` renders the `BotsPage`
-- [ ] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
-- [ ] Navigating to `/robots/:id` renders the `BotSpecsPage`
+- [X] Navigating to `/` renders the `BotsPage`
+- [X] Clicking on a robot navigates the user to `/robots:/id` where `:id` is the id of the clicked robot.
+- [X] Navigating to `/robots/:id` renders the `BotSpecsPage`
 - [ ] The `BotSpecsPage` renders the robot whose `id` matches the `:id` portion of the URL
-- [ ] Navigating to any other URL renders the `NotFoundPage` component
+- [X] Navigating to any other URL renders the `NotFoundPage` component
 - [ ] Wherever the `GoHomeButton` component is rendered, clicking on the button navigates the user back to the `/` page.
 
 **React Fundamentals**
-- [ ] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
-- [ ] Uses `Routes` in `App.jsx` to render multiple Routes
-- [ ] Uses `Route` to render a component based on the URL
-- [ ] Uses `Link` to render a component that redirects the user upon click
-- [ ] Uses `useParams` to get parts of dynamic URL
-- [ ] Uses `useNavigate` to programmatically redirect the user
+- [X] Uses `BrowserRouter` in `main.jsx` to provide routing to the entire `App`
+- [X] Uses `Routes` in `App.jsx` to render multiple Routes
+- [X] Uses `Route` to render a component based on the URL
+- [X] Uses `Link` to render a component that redirects the user upon click
+- [X] Uses `useParams` to get parts of dynamic URL
+- [X] Uses `useNavigate` to programmatically redirect the user
 
 **Miscellaneous**
 - [ ] Props are extracted in child components using destructuring
