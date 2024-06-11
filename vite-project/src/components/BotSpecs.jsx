@@ -13,9 +13,8 @@ const BotSpecs = () => {
 
   const { id } = useParams();
   const { robots } = useContext(RobotContext)
-  const bot = robots.find(robot => robot.id === Number(id))
+  const bot = robots.find(robot => robot.id === id)
   if (!bot) return <NotFoundPage />
-  // console.log(robots.id)
 
   const botClassIcon = (bot_class) => {
     switch (bot_class) {
